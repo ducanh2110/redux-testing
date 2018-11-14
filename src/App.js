@@ -15,7 +15,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-            <HelloWorld tech={this.state.text}/>
+            <HelloWorld tech={this.state.tech}/>
 
             <ButtonGroup technologies={['React', 'Elm', 'Redux']}/>
 
