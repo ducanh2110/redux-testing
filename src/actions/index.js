@@ -1,6 +1,6 @@
-export const setTechnology = (text) => {
+export const setTechnology = (tech) => {
     return {
         type: "SET_TECHNOLOGY",
-        text
+        tech
     }
 }

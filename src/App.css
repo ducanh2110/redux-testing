@@ -1,6 +1,7 @@
 .App {
-  text-align: center;
-}
+  height: 100%;
+  display: flex;
+  color: rgba(189, 189, 192, 1);}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

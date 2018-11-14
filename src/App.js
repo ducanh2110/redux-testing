@@ -4,30 +4,20 @@ import './App.css';
 import HelloWorld from "./components/HelloWorld";
 import {store} from './store'
 import ButtonGroup from "./components/ButtonGroup";
+import Main from "./components/Main";
+import SideBar from "./components/SideBar";
 class App extends Component {
     constructor(props) {
         super(props);
     }
-    state = store.getState();
 
     render() {
-    return (
+        let state = store.getState();
+
+        return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-            <HelloWorld tech={this.state.tech}/>
-
-            <ButtonGroup technologies={['React', 'Elm', 'Redux']}/>
-
-            <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+          <SideBar/>
+          <Main/>
       </div>
     );
   }
