@@ -1,12 +1,9 @@
-export default (state, action) => {
-    switch (action.type) {
-        case "SET_TECHNOLOGY": {
-            console.log(action);
-            return {
-                ...state,
-                tech: action.tech
-            }
-        }
-        default: return state;
-    }
-}
+import user from './userReducer';
+import contacts from './contactReducer';
+import activeUserId from './activeUserIdReducer';
+import messages from './messageReducer';
+import {combineReducers} from 'redux'
+
+export default combineReducers({
+    user, contacts,messages, activeUserId
+})

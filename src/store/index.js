@@ -1,7 +1,6 @@
 import {createStore} from 'redux';
-import reducer from '../reducers';
+import combineReducers from '../reducers';
+// import {contacts} from '../static-data'
 
-const initialState = {
-    tech: ' using Redux'
-};
-export const store = createStore(reducer, initialState);
+const store = createStore(combineReducers);
+export default store;
