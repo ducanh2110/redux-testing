@@ -130,27 +130,7 @@ const messages = {
         is_user_msg: false,
         number: 10,
         text: "Xuan Truong Dep Trai"
-    },
-    11: {
-        is_user_msg: false,
-        number: 11,
-        text: "Duc Anh Dep Trai"
-    },
-    12: {
-        is_user_msg: false,
-        number: 12,
-        text: "Chi Thuan Dep Trai"
-    },
-    13: {
-        is_user_msg: true,
-        number: 13,
-        text: "Chi En Dep Trai"
-    },
-    14: {
-        is_user_msg: true,
-        number: 14,
-        text: "Chi Huong Dep Trai"
-    },
+    }
 }
 export const getMessages = (quantity) => {
     return _.mapValues(contacts, function (o) {

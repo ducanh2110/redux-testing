@@ -4,6 +4,7 @@ import store from '../store';
 import Header from '../components/ChatWindow/Header'
 import Chats from "../components/ChatWindow/Chats";
 import _ from "lodash";
+import MessagesInput from "./MessagesInput";
 class ChatWindow extends Component {
     render() {
         const state = store.getState();
@@ -13,7 +14,7 @@ class ChatWindow extends Component {
             <div className="ChatWindow">
                 <Header user={activeUser}/>
                 <Chats messages={_.values(activeMessages)}/>
-                Conversation for user: {this.props.activeUserId}
+                <MessagesInput value={state.typing}/>
             </div>
         );
     }
